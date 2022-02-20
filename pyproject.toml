@@ -4,11 +4,13 @@ version = "0.1.0"
 description = ""
 authors = ["Nikolay Larionov <nikolay.larionov@wilix.org>"]
 packages = [
-  { include = "brain_games"}
+    { include = "brain_games" },
 ]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+prompt = "^0.4.1"
+flake8 = "^4.0.1"
 
 [tool.poetry.dev-dependencies]
 
