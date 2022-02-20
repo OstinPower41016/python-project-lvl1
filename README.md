@@ -1,3 +1,4 @@
+### Brain Games
 
 [![Actions Status](https://github.com/OstinPower41016/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/OstinPower41016/python-project-lvl1/actions)
 
