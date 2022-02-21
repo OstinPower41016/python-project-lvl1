@@ -1,37 +1,28 @@
 from random import randint
-import prompt
-from brain_games.cli import get_user_name
+import brain_games.cli as cli
+from brain_games.scripts.brain_games import loop
 
 
 def game_iter():
     """
-    :return: returns true if the answer is correct otherwise
+    :return: returns true if the answer is correct otherwise return
+    tuple, when first argument is right answer and second is answer_user
     """
 
     random_number = randint(1, 100)
-    print(f'Question: {random_number}')
-    answer_user = prompt.string('Your answer: ')
+    answer_user = cli.ask_question(random_number)
     right_answer = 'yes' if random_number % 2 == 0 else 'no'
     if right_answer == answer_user:
-        print('Correct!')
-        return True
+        return True, right_answer, answer_user
     else:
-        print(f"{answer_user} is wrong answer ;(. "
-              f"Correct answer was {right_answer}.")
-        return False
+        return False, right_answer, answer_user
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    name = get_user_name()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    count = 1
-    while count <= 3:
-        if not game_iter():
-            break
-        if count == 3:
-            print(f'Congratulations, {name}!')
-        count += 1
+    cli.print_welcome_message()
+    name = cli.get_user_name()
+    cli.print_rules_of_game()
+    loop(game_iter, name)
 
 
 if __name__ == '__main__':
