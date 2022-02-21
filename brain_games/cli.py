@@ -14,7 +14,8 @@ def print_welcome_message():
 def ask_question(expression):
     answer_user = prompt.string(f'Question {expression} ')
     print(f'Your answer: {answer_user}')
-    return int(answer_user) if answer_user.lstrip("-").isdigit() else answer_user
+    return int(answer_user) if answer_user.lstrip("-").isdigit() \
+        else answer_user
 
 
 def print_rules_of_game():
