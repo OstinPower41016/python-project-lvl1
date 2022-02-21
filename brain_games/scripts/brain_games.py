@@ -15,6 +15,7 @@ def loop(func, name):
         if not is_correct_answer:
             print(f"{answer_user} is wrong answer ;(."
                   f" Correct answer was {right_answer}.")
+            print(f"Let's try again, {name}!")
             break
         if count == 3:
             print(f'Congratulations, {name}!')
