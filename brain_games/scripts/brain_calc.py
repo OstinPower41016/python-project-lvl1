@@ -10,7 +10,9 @@ def game_iter():
     operator = choice(OPERATORS)
     answer_user = cli.ask_question(f"{one} {operator} {second}")
     right_answer = eval(f"{one}{operator}{second}")
-    return right_answer == answer_user
+    if right_answer != answer_user:
+        return False, right_answer, answer_user
+    return True, right_answer, answer_user
 
 
 def main():
