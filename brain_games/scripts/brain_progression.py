@@ -25,7 +25,3 @@ def main():
     name = cli.get_user_name()
     print("What number is missing in the progression?")
     loop(game_iter, name)
-
-
-a = [x for x in range(10)]
-a[0] = 10
