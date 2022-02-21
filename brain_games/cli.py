@@ -18,5 +18,8 @@ def ask_question(expression):
         else answer_user
 
 
-def print_rules_of_game():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+def print_rules_of_game(str=None):
+    if str:
+        print(str)
+    else:
+        print('Answer "yes" if the number is even, otherwise answer "no".')
