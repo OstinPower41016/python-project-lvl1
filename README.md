@@ -1,6 +1,6 @@
 # Brain Games
 
-[![Actions Status](https://github.com/OstinPower41016/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/OstinPower41016/python-project-lvl1/actions)  ![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability) ![example workflow](https://github.com/OstinPower41016/python-project-lvl1/actions/workflows/pylint.yml/badge.svg)
+ ![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability) ![example workflow](https://github.com/OstinPower41016/python-project-lvl1/actions/workflows/pylint.yml/badge.svg)
 
 # Description
 The package consists of 5 console games, each game has 3 rounds, where in each round you need to give the correct answer to win:
